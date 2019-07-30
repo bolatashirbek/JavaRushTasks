@@ -12,5 +12,9 @@ public class Cat {
     }
 
     public static void main(String[] args) {
+        addNewCat();
+        addNewCat();
+        addNewCat();
+        System.out.println(Cat.catsCount);
     }
 }
