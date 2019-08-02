@@ -5,7 +5,6 @@ package com.javarush.task.task04.task0420;
 */
 
 import java.io.*;
-import java.util.*;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
@@ -29,9 +28,8 @@ public class Solution {
             return a;
         else if (b >= a && b >= c)
             return b;
-        else if (c >= a && c >= b)
+        else
             return c;
-        return 0;
     }
 
     private static int minOfNumbers(int a, int b, int c) {
@@ -39,8 +37,7 @@ public class Solution {
             return a;
         else if (b <= a && b <= c)
             return b;
-        else if (c <= a && c <= b)
+        else
             return c;
-        return 0;
     }
 }
