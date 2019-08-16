@@ -20,10 +20,14 @@ public class Solution {
             strings.add(string);
         }
 
+        //  Строим новый список. Если в строке чётное число букв, строка удваивается, если нечётное - утраивается.
         ArrayList<String> resultStrings = new ArrayList<String>();
         for (int i = 0; i < strings.size(); i++) {
             String string = strings.get(i);
-            resultStrings.add(string.toUpperCase());
+            if (string.length() % 2 == 0)
+                resultStrings.add(string + " " + string);
+            else
+                resultStrings.add(string + " " + string + " " + string);
         }
 
         for (int i = 0; i < resultStrings.size(); i++) {
