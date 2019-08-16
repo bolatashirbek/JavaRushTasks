@@ -14,7 +14,7 @@ public class Solution {
         ArrayList<Integer> numbers = new ArrayList<>();
         ArrayList<Integer> numbersDivide3 = new ArrayList<>();
         ArrayList<Integer> numbersDivide2 = new ArrayList<>();
-        ArrayList<Integer> otherNubers = new ArrayList<>();
+        ArrayList<Integer> otherNumbers = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
             int number = Integer.parseInt(reader.readLine());
             numbers.add(number);
@@ -28,13 +28,13 @@ public class Solution {
             if (x % 2 == 0) {
                 numbersDivide2.add(x);
             } else if (x % 3 != 0) {
-                otherNubers.add(x);
+                otherNumbers.add(x);
             }
         }
 
         printList(numbersDivide3);
         printList(numbersDivide2);
-        printList(otherNubers);
+        printList(otherNumbers);
     }
 
     public static void printList(ArrayList<Integer> list) {
