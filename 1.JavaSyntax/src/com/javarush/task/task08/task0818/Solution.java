@@ -35,6 +35,10 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-
+        Map<String, Integer> map = createMap();
+        removeItemFromMap(map);
+        for (Map.Entry<String, Integer> pair : map.entrySet()) {
+            System.out.println(pair.getKey() + " - " + pair.getValue());
+        }
     }
 }
