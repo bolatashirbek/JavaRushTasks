@@ -46,6 +46,10 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-
+        Set<Integer> set = createSet();
+        removeAllNumbersGreaterThan10(set);
+        for (int num : set) {
+            System.out.println(num);
+        }
     }
 }
