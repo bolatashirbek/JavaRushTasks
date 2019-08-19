@@ -34,6 +34,9 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-
+        Set<String> strings = createSet();
+        for (String word : strings) {
+            System.out.println(word);
+        }
     }
 }
