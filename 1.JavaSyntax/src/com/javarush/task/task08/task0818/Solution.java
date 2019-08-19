@@ -34,9 +34,14 @@ public class Solution {
         }
     }
 
+    // удалили используя Lambda Java8
+    public static void removeItemFromMap2(Map<String, Integer> map) {
+        map.entrySet().removeIf(e -> e.getValue() < 500);
+    }
+
     public static void main(String[] args) {
         Map<String, Integer> map = createMap();
-        removeItemFromMap(map);
+        removeItemFromMap2(map);
         for (Map.Entry<String, Integer> pair : map.entrySet()) {
             System.out.println(pair.getKey() + " - " + pair.getValue());
         }
