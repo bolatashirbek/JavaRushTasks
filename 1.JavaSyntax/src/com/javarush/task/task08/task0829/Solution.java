@@ -24,12 +24,11 @@ public class Solution {
             list.add(family);
         }
 
-        // Read the house number
-        int houseNumber = Integer.parseInt(reader.readLine());
-
-        if (0 <= houseNumber && houseNumber < list.size()) {
-            String familyName = list.get(houseNumber);
-            System.out.println(familyName);
+        String city = reader.readLine();
+        for (int i = 0; i < list.size() - 1; i++) {
+            if (city.equals(list.get(i))) {
+                System.out.println(list.get(i + 1));
+            }
         }
     }
 }
