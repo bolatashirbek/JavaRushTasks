@@ -21,4 +21,13 @@ public class Solution {
         }
         System.out.println(capitalize);
     }
+
+    public void printCapitalizeLetters(String string) {
+        String[] words = string.trim().split("[\\s]+");
+        String out = "";
+        for (String word : words) {
+            out += word.substring(0, 1).toUpperCase() + word.substring(1) + " ";
+        }
+        System.out.print(out);
+    }
 }
