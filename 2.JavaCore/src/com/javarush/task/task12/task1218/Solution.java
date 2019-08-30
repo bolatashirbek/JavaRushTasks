@@ -60,12 +60,12 @@ public class Solution {
     public class Airplane implements CanMove, CanFly {
         @Override
         public void fly() {
-            System.out.println("Самалет летит.");
+            System.out.println("Самолет летит.");
         }
 
         @Override
         public void move() {
-            System.out.println("Самалет начал движение.");
+            System.out.println("Самолет начал движение.");
         }
     }
 }
