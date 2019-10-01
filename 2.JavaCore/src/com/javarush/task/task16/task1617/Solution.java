@@ -25,9 +25,9 @@ public class Solution {
                     Thread.sleep(1000);
                     numSeconds--;
                 }
-                System.out.print("Марш");
+                System.out.print("Марш!");
             } catch (InterruptedException e) {
-                System.out.print("Прервано");
+                System.out.print("Прервано!");
             }
         }
     }
