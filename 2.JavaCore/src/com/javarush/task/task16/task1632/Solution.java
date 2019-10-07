@@ -64,6 +64,7 @@ public class Solution {
 
         @Override
         public void showWarning() {
+            //this.interrupt();
             threads.get(3).stop();
         }
     }
