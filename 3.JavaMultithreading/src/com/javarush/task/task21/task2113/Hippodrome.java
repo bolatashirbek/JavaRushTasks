@@ -41,4 +41,12 @@ public class Hippodrome {
         horses.forEach(Horse::print);
         for (int i = 0; i < 10; i++) System.out.println();
     }
+
+    public Horse getWinner() {
+        return horses.stream().max(Comparator.comparing(Horse::getDistance)).orElse(null);
+    }
+
+    public void printWinner() {
+        System.out.println("Winner is " + getWinner().getName() + "!");
+    }
 }
