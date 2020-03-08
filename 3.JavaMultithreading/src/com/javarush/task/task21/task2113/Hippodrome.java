@@ -6,7 +6,7 @@ public class Hippodrome {
     private List<Horse> horses;
     public static Hippodrome game;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         game = new Hippodrome(new ArrayList<>());
         Horse akbozat = new Horse("Ақбозат", 3, 0);
         Horse kulager = new Horse("Құлагер", 3, 0);
@@ -14,6 +14,7 @@ public class Hippodrome {
         game.getHorses().add(akbozat);
         game.getHorses().add(kulager);
         game.getHorses().add(naizagai);
+        game.run();
     }
 
     public Hippodrome(List<Horse> list) {
