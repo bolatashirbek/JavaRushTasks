@@ -15,6 +15,7 @@ public class Hippodrome {
         game.getHorses().add(kulager);
         game.getHorses().add(naizagai);
         game.run();
+        game.printWinner();
     }
 
     public Hippodrome(List<Horse> list) {
